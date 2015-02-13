@@ -131,7 +131,7 @@ _Rationale:_ This avoids confusion with local variables or method arguments that
 
 _Rationale:_ Classes provide memory management while structs are not accessed by reference. Use structs when you need light weight containers for classes, as they are copied erverytime they are referenced.
 
-From The Swift Programming Language documentation:
+From [The Swift Programming Language](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/ClassesAndStructures.html#//apple_ref/doc/uid/TP40014097-CH13-XID_108) documentation:
 
 >Structure instances are always passed by value, and class instances are always passed by reference. This means that they are suited to different kinds of tasks. As you consider the data constructs and functionality that you need for a project, decide whether each data construct should be defined as a class or as a structure.
 >
