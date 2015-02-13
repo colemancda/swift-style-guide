@@ -81,11 +81,11 @@ public class Store {
 
 _Rationale:_ Most top-level definitions for frameworks will not be specifically `internal`, and being explicit ensures that careful thought goes into that decision. Within a definition, reusing the same access control specifier is just duplicative, and the default is usually reasonable.
 
-#### Never specify access control explicitly for top-level definitions in app sources
+#### Never specify access control explicitly for top-level definitions in app sources and unit tests
 
-Top-level functions, types, and variables should always have implicit access control specifiers.
+Top-level functions, types, and variables in application and unit test sources should always have implicit access control specifier.
 
-_Rationale:_ Swift code written for an app will only be used within that app. Not specifying an access control level will default it to ```internal```, which is ideal for code that will not be used outside of the application's executable. If you have custom views, or model code that might be resuable, put them in a separate framework. Ideally your app's Swift sources will only consist of controller classes and app-specific variables, enums, etc.
+_Rationale:_ Swift code written for an app (or unit test) will only be used within that app. Not specifying an access control level will default it to ```internal```, which is ideal for code that will not be used outside of the application's executable. If you have custom views, or model code that might be resuable, put them in a separate framework. Ideally your app's Swift sources will only consist of controller classes and app-specific variables, enums, etc.
 
 #### When specifying a type, always associate the colon with the identifier
 
