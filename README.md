@@ -125,7 +125,32 @@ private class History {
 }
 ```
 
-_Rationale:_ This avoids confusion with local variables or method arguments that might share the same name as a property.
+_Rationale:_ This avoids confusion with local variables or method arguments that might share the same name as a property. Also avoids confusion between methods and functions.
+
+#### Functions should always start with an uppercase letter
+
+When creating a function, 
+
+```swift
+func SaveDefaults() { ... }
+}
+```
+
+_Rationale:_ Follows the Objective-C coding style found in Cocoa APIs. Also avoids confusion between methods and functions.
+
+#### Methods should always start with a lowercase letter
+
+```swift
+public class History {
+	var events: [Event]
+
+	func rewrite() {
+		self.events = []
+	}
+}
+```
+
+_Rationale:_ Follows the Objective-C coding style found in Cocoa APIs. 
 
 #### Prefer classes over structs
 
