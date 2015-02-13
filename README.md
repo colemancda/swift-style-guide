@@ -129,7 +129,7 @@ _Rationale:_ This avoids confusion with local variables or method arguments that
 
 #### Functions should always start with an uppercase letter
 
-When creating a function, the name of the function should always start with a lowercase letter.
+When creating a function, the name of the function should always start with an uppercase letter.
 
 ```swift
 func SaveDefaults() { ... }
@@ -139,7 +139,7 @@ _Rationale:_ Follows the Objective-C coding style found in Cocoa APIs. Also avoi
 
 #### Methods should always start with a lowercase letter
 
-When creating a method, the name of the method should always start with an uppercase letter.
+When creating a method, the name of the method should always start with a lowercase letter.
 
 ```swift
 public class History {
