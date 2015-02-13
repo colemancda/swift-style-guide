@@ -72,11 +72,12 @@ internal struct TheFez {}
 private func doTheThings(things: [Thing]) {}
 ```
 
-However, definitions within those can leave access control implicit, where appropriate:
+Definitions within those should also have access control explicit:
 
 ```swift
-internal struct TheFez {
-	var owner: Person = Joshaber()
+public class Store {
+    public var address: String
+    public func locateOnMap(map: Map) {...}
 }
 ```
 
